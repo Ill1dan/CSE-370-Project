@@ -9,7 +9,7 @@
 <body>
     <div class="header">
         <div>
-            <img src="../images/logo.png" alt="">
+            <img src="images/logo.png" alt="">
             <h1>DonateRed</h1>
         </div>
         <ul>
