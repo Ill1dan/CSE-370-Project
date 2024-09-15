@@ -25,6 +25,12 @@ html {
     font-size: 16px;
 }
 
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 /* Header Part */
 
 .header{
@@ -61,7 +67,7 @@ html {
 .header ul li{
     padding: 1% 4%;
     cursor: pointer;
-    transition: 1ms;
+    transition: 0.5s ease-in-out;
     user-select: none;
 }
 .header ul li:hover{
@@ -118,4 +124,52 @@ html {
 }
 .ending p{
     color: #f2ffff;
+}
+
+/* Blood Listing */
+
+.blood-listing-main{
+    padding: 3%;
+    flex: 1;
+}
+
+.bar{
+    width: 100%;
+    background: #9e1121;
+    padding: 1%;
+    color: #f2ffff;
+}
+
+.listing{
+    background: #fff;
+    display: flex;
+    padding: 1.5rem;
+    width: 20rem;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-block: 1rem;
+    box-shadow: 0 20px 50px rgba(158, 17, 33, 0.7);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.listing:hover{
+    scale: 1.2;
+}
+
+.listing i{
+    font-size: 4rem;
+    color: #9e1121;
+}
+.listing ul{
+    list-style: none;
+}
+.listing ul li{
+    padding-block: 0.25rem;
+}
+
+.blood-listing-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
 }

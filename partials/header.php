@@ -1,3 +1,8 @@
+<?php
+    include("config/constants.php");
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/body.css">
+    <script src="https://kit.fontawesome.com/8a0d75a546.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="header">
@@ -15,7 +21,7 @@
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About Us</a></li>
-            <li><a href="#">Search Listing</a></li>
+            <li><a href="blood-listing.php">Search Listing</a></li>
             <li><a href="#">Add Blood Request</a></li>
             <li><a href="#">Logout</a></li>
         </ul>
