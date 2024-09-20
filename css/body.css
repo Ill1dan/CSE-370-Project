@@ -111,7 +111,7 @@ body{
     margin-bottom: 5%;
 }
 .wrapper ul li{
-    padding: 3% 1%;
+    padding: 4% 1%;
     font-weight: bold;
     color: #f2ffff;
 }
@@ -172,4 +172,67 @@ body{
 .blood-listing-wrapper{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+
+.filter{
+    background: #fcdfdf;
+    height: 8rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search{
+    width: 60%;
+}
+
+.search form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search form input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+    transition: 1s;
+}
+.search form button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: 1s;
+}
+.search form button img{
+    width: 16px;
+}
+
+.search form input:hover{
+    background: #333333;
+    color: #fff;
+}
+.search form button:hover{
+    background: #333333;
+    color: #fff;
+}
+
+/* Index */
+
+.main{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -1,17 +1,22 @@
 <?php
     include("partials/header.php");
+
+    // Check whether the submit button is clicked or not
+    if ($_SERVER["REQUEST_METHOD"] == "POST"){
+        // Button Clicked
+        
+        // 1. Get the data from form
+        $search = $_POST["search"];
+
+        }
+        else{
+            // Failed
+
+            // Redirect Page To Add Admin
+            header("location:".SITEURL."admin/blood-listing.php");
+        }
 ?>
-
     <div class="blood-listing-main">
-        <div class="filter">
-            <div class="search">
-                <form action="search-blood.php" method="POST">
-                    <input type="text" name="search" placeholder="Search for blood" spellcheck="false">
-                    <button type="submit" name="submit"><img src="images/search.png"></button>
-                </form>
-            </div>
-        </div>
-
         <div class="mid">
             <div class="bar">
                 <h4>All Seekers list</h4>
@@ -23,7 +28,8 @@
                             FROM blood_requests b
                             JOIN user u ON b.Seeker_ID = u.User_ID
                             JOIN areas a ON a.Area_ID = b.Req_Area
-                            JOIN blood_types bt ON b.Requested_type = bt.BloodType_ID";
+                            JOIN blood_types bt ON b.Requested_type = bt.BloodType_ID
+                            WHERE BloodType LIKE '%$search%' OR Area_Name LIKE '%$search%'";
 
                     // Execute the Query
                     $res = mysqli_query($conn, $sql);
@@ -32,6 +38,7 @@
                     if($res == TRUE){
                         // Count Rows to Check whether we have data in database or not
                         $count = mysqli_num_rows($res); // Funtion to get all the rows in the database
+
 
                         // Check the number of rows
                         if($count > 0){

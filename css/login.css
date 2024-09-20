@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: transparent; /* Transparent background */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.logo img {
+    width: 50px; 
+    margin-right: 10px; 
+}
+
+.logo h1 {
+    color: #9e1121; 
+    font-family: "Playwrite CU", sans-serif;
+    font-size: 24px; 
+}
+
+.login-form {
+    width: 400px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 32px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #030303;
+    border-radius: 8px;
+    font-size: 18px;
+    background-color: #f9f9f9;
+    color: #000000;
+}
+
+.input-group input::placeholder {
+    font-size: 16px;
+    color: #999;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #ff3b3b;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #cc2e2e;
+}
+
+.signup-link {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.signup-link a {
+    color: #ff3b3b;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}

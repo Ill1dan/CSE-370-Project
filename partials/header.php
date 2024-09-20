@@ -1,5 +1,6 @@
 <?php
     include("config/constants.php");
+    include("login-checker.php");
 ?>
 
 
@@ -19,10 +20,10 @@
             <h1>DonateRed</h1>
         </div>
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="blood-listing.php">Search Listing</a></li>
             <li><a href="#">Add Blood Request</a></li>
-            <li><a href="#">Logout</a></li>
+            <li><a href="logout.php">Logout</a></li>
         </ul>
     </div>

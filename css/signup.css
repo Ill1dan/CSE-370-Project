@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    min-height: 100vh;
+}
+
+.logo-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 18px;
+    background-color: transparent; 
+}
+
+.logo-header img {
+    width: 60px;
+    margin-right: 15px;
+}
+
+.logo-header h1 {
+    font-size: 32px;
+    color: #9e1121; 
+    font-family: 'Playwrite CU', sans-serif;
+}
+
+
+.signup-form {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 32px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #030303;
+    border-radius: 8px;
+    font-size: 18px;
+    background-color: #f9f9f9;
+    color: #000000;
+}
+
+.input-group input::placeholder {
+    font-size: 16px;
+    color: #999;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.col {
+    flex: 1;
+}
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+#donorFields {
+    display: none;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #ff3b3b;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #cc2e2e;
+}
+
+.login-link {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.login-link a {
+    color: #ff3b3b;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+.input-group select[multiple] {
+    height: auto;
+    min-height: 150px;
+    padding: 8px;
+    border: 1.5px solid #030303;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000000;
+    transition: border-color 0.3s ease;
+}
+
+.input-group select[multiple] option {
+    padding: 8px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.input-group select[multiple] option:last-child {
+    border-bottom: none;
+}
+
+.input-group select[multiple] option:hover,
+.input-group select[multiple] option:focus {
+    background-color: #f0f0f0;
+}
+
+.selected {
+    background-color: #007BFF;
+    color: white;
+}
