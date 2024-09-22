@@ -1,0 +1,70 @@
+/* Add Blood Request */
+
+.add-blood-request-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+.req-form-container {
+    background-color: white;
+    border: 2px solid #d00;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    color: #9e1121;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+.req-asterisk {
+    color: red;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+    height: 60px;
+}
+
+button {
+    background-color: #9e1121;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    width: 48%;
+    margin: 5px 1%;
+}
+
+button:hover {
+    background-color: #8a0f1c;
+}
+
+.req-hidden {
+    display: none;
+}

@@ -1,0 +1,131 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.edit-profile-container {
+    background-color: white;
+    border: 2px solid #9e1121;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Adjust the width to be more responsive */
+    max-width: 1200px; /* Set a maximum width for smaller forms */
+    box-sizing: border-box;
+}
+
+
+h2 {
+    font-size: 2rem;
+    /* font-family: 'Poppins', sans-serif; */
+    color: #9e1121;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+label {
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="date"],
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #6b5f5f;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.input-group select:focus, input:focus {
+    outline: 1px solid #9e1121;
+}
+
+
+button {
+    background-color: #9e1121;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #8a0f1c;
+}
+
+button {
+    background-color: #9e1121;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    justify-content: center;
+    padding: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #8a0f1c;
+}
+
+
+/* .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+} */
+
+.input-group select[multiple] {
+    height: auto;
+    min-height: 150px;
+    padding: 8px;
+    border: 1.5px solid #030303;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000000;
+    transition: border-color 0.3s ease;
+}
+
+.input-group select[multiple] option {
+    padding: 8px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.input-group select[multiple] option:last-child {
+    border-bottom: none;
+}
+
+.input-group select[multiple] option:hover,
+.input-group select[multiple] option:focus {
+    background-color: #f0f0f0;
+}
+
+.selected {
+    background-color: #007BFF;
+    color: white;
+}
