@@ -34,11 +34,14 @@
                     <i class="fa-solid fa-bell"></i>
                 </div>
             </a>
-            <a href="editprofile.php">
-                <div class="user-profile-logo">
-                    <i class="fa-regular fa-user"></i>
-                </div>
-            </a>
+            <div>
+                <a href="editprofile.php">
+                    <div class="user-profile-logo">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                </a>
+                <h3><?php echo $_SESSION['username']; ?></h3>
+            </div>
             
 
         </div>
